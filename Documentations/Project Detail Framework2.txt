@@ -1,0 +1,62 @@
+Act as an experienced QA Automation Lead and create a complete, production-ready BDD
+Cucumber Web Automation Framework using Java, Selenium WebDriver, Cucumber
+(Gherkin), Maven, and Extent Reports (HTML reporting).
+✅ Requirements:
+1. Use the proper Maven project folder structure:
+src/main/java
+src/test/java
+src/test/resources
+2. Include a correct pom.xml file with dependencies for:
+Selenium Java
+Cucumber Java
+Cucumber TestNG
+TestNG
+WebDriverManager
+ExtentReports
+SLF4J (for cleaner logging)
+3. Implement the following framework structure and files:
+Base Classes:
+BaseTest.java → WebDriver setup & teardown, Extent Reports initialization,
+logging helper methods (logInfo, logPass, logFail, screenshot capture).
+ExtentManager.java → Creates and configures the ExtentReports instance.
+ExtentCucumberAdapter.java → Integrates Cucumber results with Extent
+Reports.
+ConfigReader.java → Reads configuration values from
+config.properties.
+Page Object Model (POM):
+LoginPage.java → Page class with locators & methods for the OrangeHRM
+login page.
+HomePage.java → Represents the landing page after successful login.
+Step Definition Classes:
+LoginSteps.java → Contains step definitions for login feature.
+Runner Class:
+TestRunner.java → Cucumber TestNG runner file with proper glue paths
+and Extent adapter plugin.
+Feature Files (BDD Scenarios):
+src/test/resources/features/Login.feature → Contains a valid login
+scenario for https://opensourcedemo.orangehrmlive.com/web/index.php/auth/login
+4. Add a config.properties file with:
+base.url=https://opensourcedemo.orangehrmlive.com/web/index.php/auth/login
+username=Admin
+password=admin123
+browser=chrome
+report.path=reports
+5. Integrate Extent Reports using the Extent Cucumber Adapter to produce a beautiful
+HTML report with scenario, step, and screenshot details.
+6. Ensure screenshot capture on test failure or step failure.
+7. The framework should support running both from IDE and CLI using:
+mvn clean test
+8. Include comments throughout the code to help beginners understand each part.
+9. The final framework should follow clean coding and reusability principles (POM + BDD
++ reporting).
+🎯 Expected Output:
+Full Maven project folder structure
+All Java class codes
+pom.xml
+config.properties
+Login.feature file with sample scenario
+testng.xml (if TestNG integration is used)
+Report output path (e.g., reports/ExtentReport.html)
+Clear step-by-step instructions to run and view results.
+The final result must be copy-paste runnable in Eclipse or IntelliJ without any manual
+fixes.
