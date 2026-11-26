@@ -110,7 +110,7 @@ Feature: OrangeHRM Login
 
 ## 👨‍💻 Author
 
-**Mohnissh(Naaccht)**
+**Mohnissh**
 
 ---
 *This repository is an educational BDD automation framework project. Add further scenarios as the framework evolves.*
